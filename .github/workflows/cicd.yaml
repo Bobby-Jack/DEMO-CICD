@@ -17,8 +17,12 @@ jobs: #listes des actions
               with:
                 username: ${{secrets.DOCKER_HUB_USER}}
                 password: ${{secrets.DOCKER_HUB_PASSWORD}}
-
-
-        
+            
+            - name: Build and push
+              if: steps.docker_login.outcome == 'success'
+              uses: docker/build-push-action@v6
+              with:
+                push: true
+                tags: bobbyjackmcreed/clicker:0.1
 
             
