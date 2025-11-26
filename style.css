@@ -1,0 +1,32 @@
+body{
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-radius: 50%;
+    border-style: none;
+    background-color: brown;
+    border-bottom: 2px solid rgb(41, 0, 0);
+    transition: 0.3s ease;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(241, 65, 65);
+}
+button:active{
+    
+    background-color: rgb(100, 26, 26);
+    transform: translateY(2px);
+    border-bottom: 0px solid;
+    border-top: 2px solid rgb(41, 0, 0);
+}
