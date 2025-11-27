@@ -15,7 +15,7 @@ button{
     padding: 2em;
     border-radius: 50%;
     border-style: none;
-    background-color: brown;
+    background-color: rgb(26, 86, 205);
     border-bottom: 2px solid rgb(41, 0, 0);
     transition: 0.3s ease;
     color: white;
